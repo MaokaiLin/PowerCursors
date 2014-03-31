@@ -1,8 +1,8 @@
 import sublime, sublime_plugin
 
-_TRANSITION_CURSOR_SCOPE_TYPE        = 'transition_cursor'
-_TRANSITION_CURSOR_ICON              = 'dot'
-_TRANSITION_CURSOR_FLAGS             = sublime.DRAW_EMPTY | sublime.DRAW_NO_FILL | sublime.PERSISTENT
+_TRANSITION_CURSOR_SCOPE_TYPE = 'transition_cursor'
+_TRANSITION_CURSOR_ICON       = 'dot'
+_TRANSITION_CURSOR_FLAGS      = sublime.DRAW_EMPTY | sublime.DRAW_NO_FILL | sublime.PERSISTENT
 
 
 #### Helper functions for adding and restoring selections ####
