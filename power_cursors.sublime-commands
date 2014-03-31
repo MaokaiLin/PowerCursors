@@ -1,0 +1,8 @@
+[
+    { "caption": "PowerCursors: Remove cursor", "command": "power_cursor_remove" },
+    { "caption": "PowerCursors: Add cursor", "command": "power_cursor_add" },
+    { "caption": "PowerCursors: Previous cursor", "command": "power_cursor_select", "args": { "forward": false } },
+    { "caption": "PowerCursors: Next cursor", "command": "power_cursor_select", "args": { "forward": true } },
+    { "caption": "PowerCursors: Activate all cursors", "command": "power_cursor_activate" },
+    { "caption": "PowerCursors: Exit", "command": "power_cursor_exit" },
+]
