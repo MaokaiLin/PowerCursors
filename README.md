@@ -17,8 +17,9 @@ Install PowerCursors for [Sublime Text](http://www.sublimetext.com/)
 ### Using [Package Control](https://sublime.wbond.net/):
 
 1. Run `Package Control: Install Package` command.
-2. Search for `PowerCursors`.
-3. Enjoy the extra power of multiple cursors!
+2. Search for `PowerCursors` and install.
+3. Restart Sublime Text.
+4. Enjoy the extra power of multiple cursors!
 
 ### Or manually, using git (not recommended):
 
@@ -35,8 +36,7 @@ There are 6 commands in **PowerCursors**:
 
     `ctrl+=` in OSX, `alt+=` in Linux and Windows.
 
-    It adds a cursor and enters a transition mode where you can move the active
-    cursor around without affecting the position of the cursor you just add.
+    It adds a cursor and enters a transition mode where you can move the active cursor around without affecting the position of the cursor you just add.
 
     The command is `power_cursor_add`.
 
@@ -62,8 +62,7 @@ There are 6 commands in **PowerCursors**:
 
     `ctrl+a` in OSX, `alt+a` in Linux and Windows.
 
-    It activates all cursors. Now when you move or edit, all cursors will
-    respond, just like how the native multiple-cursor works in Sublime Text.
+    It activates all cursors. Now when you move or edit, all cursors will respond, just like how the native multiple-cursor works in Sublime Text.
 
     The command is `power_cursor_activate`.
 
