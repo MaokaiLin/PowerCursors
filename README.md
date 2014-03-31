@@ -8,7 +8,7 @@ You can easily add a cursor and move it around while keeping all other cursors s
 
 Demo:
 ------------------
-![screen cast](screenshots/demo.gif)
+![Demo of PowerCursors](https://raw.github.com/MaokaiLin/PowerCursors/screencast/demo.gif "PowerCursors Screencast")
 
 
 Install PowerCursors for [Sublime Text](http://www.sublimetext.com/)
