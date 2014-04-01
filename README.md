@@ -74,6 +74,10 @@ There are 6 commands in **PowerCursors**:
 
     The command is `power_cursor_exit`.
 
+### Note
+
+All the commands above also work for selections. For example, after selecting one region, you can add a new cursor and select a different region while keeping the one you chose before intact. You can select multiple regions this way, then activate all and replace texts in them. Feel free to explore more usage of the commands. They are quite robust and adaptable.
+
 
 License
 -------------------
