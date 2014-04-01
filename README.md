@@ -6,9 +6,14 @@ PowerCursors is a Sublime Text 3 package that makes the add/remove/select of mul
 You can easily add a cursor and move it around while keeping all other cursors static. You can also choose between these cursors and remove them. When you are done putting cursors in positions, you can activate them and start moving and editing with all of them.
 
 
-Demo:
+Demos:
 ------------------
-![Demo of PowerCursors](https://raw.github.com/MaokaiLin/PowerCursors/screencast/demo.gif "PowerCursors Screencast")
+
+### Multiple Cursors
+![Demo 1 of PowerCursors](https://raw.github.com/MaokaiLin/PowerCursors/screencast/demo1.gif "PowerCursors Screencast 1")
+
+### Multiple Selections
+![Demo 2 of PowerCursors](https://raw.github.com/MaokaiLin/PowerCursors/screencast/demo2.gif "PowerCursors Screencast 2")
 
 
 Install PowerCursors for [Sublime Text](http://www.sublimetext.com/)

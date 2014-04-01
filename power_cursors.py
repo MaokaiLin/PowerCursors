@@ -22,7 +22,9 @@ def find_prev_sel(trans_sels, current_sel):
     for i in range(len(trans_sels) - 1, -1, -1):
         if trans_sels[i].a < current_sel.a:
             return i, trans_sels[i]
-    return -1, trans_sels[-1]  # Rotate to the last if `current_sel` is before of all other selections
+
+    # Rotate to the last if `current_sel` is before all other selections
+    return -1, trans_sels[-1]
 
 def find_next_sel(trans_sels, current_sel):
     """Find the region in `trans_sels` that is right after `current_sel`.
@@ -31,10 +33,12 @@ def find_next_sel(trans_sels, current_sel):
     for i, sel in enumerate(trans_sels):
         if sel.a > current_sel.a:
             return i, trans_sels[i]
-    return 0, trans_sels[0]  # Rotate to the beginning if `current_sel` is after of all other selections
+
+    # Rotate to the beginning if `current_sel` is after all other selections
+    return 0, trans_sels[0]
 
 
-#### Command functions ####
+#### Commands ####
 
 class PowerCursorAddCommand(sublime_plugin.TextCommand):
     """Add a new transition cursor in the view.
@@ -95,7 +99,8 @@ class PowerCursorSelectCommand(sublime_plugin.TextCommand):
         trans_sels = self.view.get_regions("transition_sels")
         trans_sels.extend(current_sels)
 
-        # Lazy step: set and retrieve a sorted and merged region list
+        # Lazy step: Store the disorganized region and retrieve a sorted and
+        # merged region list
         self.view.add_regions("transition_sels", trans_sels)
         trans_sels = self.view.get_regions("transition_sels")
 
@@ -118,7 +123,7 @@ class PowerCursorSelectCommand(sublime_plugin.TextCommand):
         set_transition_sels(self.view, trans_sels)
 
 class PowerCursorActivateCommand(sublime_plugin.TextCommand):
-    """Activate all cursors (including the current one).
+    """Activate all cursors (including the one that's currently alive).
     """
     def run(self, edit):
         sels = self.view.get_regions("transition_sels")
