@@ -117,7 +117,7 @@ class PowerCursorSelectCommand(sublime_plugin.TextCommand):
         del(trans_sels[index])
         set_transition_sels(self.view, trans_sels)
 
-class PowerCursorsActivateCommand(sublime_plugin.TextCommand):
+class PowerCursorActivateCommand(sublime_plugin.TextCommand):
     """Activate all cursors (including the current one).
     """
     def run(self, edit):
