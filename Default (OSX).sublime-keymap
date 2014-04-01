@@ -4,7 +4,7 @@
     { "keys": ["ctrl+-"], "command": "power_cursor_remove",
       "context": [ { "key": "in_cursor_transition" } ]
     },
-    { "keys": ["ctrl+a"], "command": "power_cursors_activate",
+    { "keys": ["ctrl+a"], "command": "power_cursor_activate",
       "context": [ { "key": "in_cursor_transition" } ]
     },
     { "keys": ["ctrl+["], "command": "power_cursor_select", "args": { "forward": false } },
