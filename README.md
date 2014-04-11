@@ -41,7 +41,7 @@ There are 6 commands in **PowerCursors**:
 
     `ctrl+=` in OSX, `alt+=` in Linux and Windows.
 
-    It adds a cursor and enters a transition mode where you can move the active cursor around without affecting the position of the cursor you just add.
+    It adds a cursor and enters a transition mode where you can move the active cursor around without affecting the position of the cursor you just added.
 
     The command is `power_cursor_add`.
 
@@ -55,7 +55,7 @@ There are 6 commands in **PowerCursors**:
 
 * ### Select previous/next cursor
 
-    `ctrl+[`/`ctrl+]` in OSX, `alt+[`/`alt+]` in Linux and Windows, respectively.
+    `ctrl+[`/`ctrl+]` in OSX, `alt+[`/`alt+]` in Linux and Windows.
 
     It makes the currently active cursor static and activates the cursor right before/after the current cursor (position-wise).
 
