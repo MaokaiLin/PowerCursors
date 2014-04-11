@@ -78,12 +78,18 @@ class PowerCursorRemoveCommand(sublime_plugin.TextCommand):
             return
 
         # Activate the selection right before the current cursor
-        index, last_sel = find_prev_sel(trans_sels, self.view.sel()[0])
+        last_index, last_sel = find_prev_sel(trans_sels, self.view.sel()[0])
+        next_index, next_sel = find_next_sel(trans_sels, self.view.sel()[-1])
+        if abs(self.view.sel()[0].b - last_sel.b) < abs(next_sel.b - self.view.sel()[-1].b):
+            index, new_sel = last_index, last_sel
+        else:
+            index, new_sel = next_index, next_sel
+
         self.view.sel().clear()
-        self.view.sel().add(last_sel)
-        if last_sel.a != last_sel.b:
+        self.view.sel().add(new_sel)
+        if new_sel.a != new_sel.b:
             self.view.add_regions("mark", [sublime.Region(last_sel.a, last_sel.a)],
-                                  "mark", "dot", sublime.HIDDEN | sublime.PERSISTENT)
+                                  "mark", "", sublime.HIDDEN | sublime.PERSISTENT)
         else:
             self.view.erase_regions("mark")
 
